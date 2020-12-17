@@ -13,12 +13,10 @@ import javax.ws.rs.ApplicationPath;
  * @author weiweishen
  */
 @Configuration
-//@ComponentScan(value = {"com.pvsoul.demobackend" })
 public class JerseyConfig implements ResourceConfigCustomizer {
 
 	@Override
 	public void customize(ResourceConfig config) {
 		config.register(HelloPvsoulResouce.class);
-		//config.registerClasses(ValidationExceptionProvider.class);
 	}
 }
