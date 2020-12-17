@@ -10,8 +10,6 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
-//@Api("VoiceCallResource")
-@Path("hellopvsoul")
 @Component
 @Slf4j
 @Consumes(MediaType.APPLICATION_JSON)
@@ -19,7 +17,7 @@ import javax.ws.rs.core.Response;
 public class HelloPvsoulResouce {
 
     @GET
-    @Path("demo")
+    @Path("hellopvsoul")
     public Response HelloPvsoul() {
         return Response.status(Response.Status.OK).entity("Hello Pvsoul").build();
     }
